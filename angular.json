@@ -120,5 +120,8 @@
       }
     }
   },
-  "defaultProject": "HTTP"
+  "defaultProject": "HTTP",
+  "cli": {
+    "analytics": false
+  }
 }

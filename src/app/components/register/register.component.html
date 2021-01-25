@@ -1,0 +1,49 @@
+<div class="background text-center">
+    <form
+      class="form-signin animated fadeIn"
+      autocomplete="off"
+      [formGroup]="registerForm"
+      (ngSubmit)="register()"
+    >
+      <h1 class="h3 mb-3 font-weight-normal">Registrar Usuario</h1>
+      <label class="sr-only" for="inputUsername">Username</label>
+      <input
+        type="text"
+        class="form-control mb-2"
+        id="inputUsername"
+        placeholder="Username"
+        formControlName="username"
+      />
+      <label class="sr-only" for="inputAge">Age</label>
+      <input
+        type="number"
+        class="form-control mb-2"
+        id="inputAge"
+        placeholder="Age"
+        formControlName="age"
+      />
+      <label class="sr-only" for="inputEmail">Email Address</label>
+      <input
+        type="email"
+        class="form-control mb-2"
+        id="inputEmail"
+        placeholder="Email Address"
+        formControlName="email"
+      />
+      <label class="sr-only" for="inputPassword">Password</label>
+      <input
+        type="password"
+        class="form-control mb-3"
+        id="inputPassword"
+        placeholder="Password"
+        formControlName="password"
+      />
+    
+      <button type="submit" class="btn btn-lg btn-primary btn-block mb-2">
+        Registrar Usuario
+      </button>
+      <a [routerLink]="['/show']">See users</a>
+      <!--<p class="e2e-inner-html-bound" [innerHTML]="htmlSnippet"></p>
+      <p class="e2e-inner-html-interpolated">{{htmlSnippet}}</p>-->
+    </form>
+  </div>
